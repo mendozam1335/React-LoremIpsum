@@ -35,10 +35,9 @@ const App = () => {
           </button>
         </div>
         <div className="lorem-text">
-          {paragraphs &&
-            paragraphs.map((paragraph) => {
-              return <p key={nanoid()}>{paragraph}</p>;
-            })}
+          {paragraphs.map((paragraph) => {
+            return <p key={nanoid()}>{paragraph}</p>;
+          })}
         </div>
       </form>
     </div>
