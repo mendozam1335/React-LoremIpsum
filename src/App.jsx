@@ -1,5 +1,6 @@
 import { useState } from "react";
 import text from "./data";
+import { nanoid } from "nanoid";
 
 const App = () => {
   const [count, setCount] = useState(1);
@@ -36,7 +37,7 @@ const App = () => {
         <div className="lorem-text">
           {paragraphs &&
             paragraphs.map((paragraph) => {
-              return <p>{paragraph}</p>;
+              return <p key={nanoid()}>{paragraph}</p>;
             })}
         </div>
       </form>
